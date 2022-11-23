@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Евгений Черевков](https://up.htmlacademy.ru/adaptive/27/user/2054473).
-* Наставник: `Неизвестно`.
+* Наставник: [Кенан Агаев](https://htmlacademy.ru/profile/kenakula).
 
 ---
 
