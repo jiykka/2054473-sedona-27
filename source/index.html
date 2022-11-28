@@ -1,12 +1,179 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+        <img src="img/svg/logo.svg" height="96" width="185" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+
+    <section class="main-slider">
+      <h1 class="visually-hidden">Гостинницы Седоны.</h1>
+    </section>
+
+    <section class="main-title">
+      <div class="main-title__box">
+        <h2 class="main-title__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="main-title__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+    </section>
+
+    <section class="main-reasons">
+      <h2 class="visually-hidden">Преимущества Седоны.</h2>
+      <ul class="main-reasons__list">
+        <li class="main-reasons__item">
+          <div class="main-reasons__box main-reasons__box--blue">
+            <h3 class="main-reasons__caption main-reasons__caption--white">Настоящий городок</h3>
+            <p class="main-reasons__text main-reasons__text--white">— №1 —</p>
+            <p class="main-reasons__text main-reasons__text--white">Седона — не аттракцион для туристов, там течёт своя
+              жизнь</p>
+          </div>
+        </li>
+        <li class="main-reasons__item">
+          <div class="main-reasons__image-box">
+            <img src="img/sedona-city-mobile.jpg" width="320" height="260" alt="Городок Седона.">
+          </div>
+        </li>
+        <li class="main-reasons__item">
+          <div class="main-reasons__img-home"></div>
+          <h3 class="main-reasons__caption">Жилье</h3>
+          <p class="main-reasons__text">Рекомендуем пожить в настоящем мотеле,<br> всё как
+            в кино!</p>
+        </li>
+        <li class="main-reasons__item">
+          <div class="main-reasons__img-food"></div>
+          <h3 class="main-reasons__caption">Еда</h3>
+          <p class="main-reasons__text">Всегда заказывайте<br> топовый фирменный бургер, вы не
+            разочаруетесь!
+          </p>
+        </li>
+        <li class="main-reasons__item">
+          <div class="main-reasons__img-souvenir"></div>
+          <h3 class="main-reasons__caption">Сувениры</h3>
+          <p class="main-reasons__text">Не только китайского,<br> но и настоящего местного
+            производства!</p>
+        </li>
+        <li class="main-reasons__item">
+          <div class="main-reasons__image-box">
+            <img src="img/devil-bridge-mobile.jpg" width="320" height="260" alt="Мост Дьявола.">
+          </div>
+        </li>
+        <li class="main-reasons__item">
+          <div class="main-reasons__box main-reasons__box--blue">
+            <h3 class="main-reasons__caption main-reasons__caption--white">Там есть<br> мост дьявола</h3>
+            <p class="main-reasons__text main-reasons__text--white">— №2 —</p>
+            <p class="main-reasons__text main-reasons__text--white">Да, по нему можно пройти! Если вы осмелитесь,
+              разумеется</p>
+          </div>
+        </li>
+        <li class="main-reasons__item">
+          <h3 class="main-reasons__caption">Небольшая<br> площадь</h3>
+          <p class="main-reasons__text">— №3 —</p>
+          <p class="main-reasons__text">Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="main-reasons__item">
+          <h3 class="main-reasons__caption">Красивая<br> дорога</h3>
+          <p class="main-reasons__text">— №4 —</p>
+          <p class="main-reasons__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="main-reasons__item">
+          <h3 class="main-reasons__caption">Мало<br> туристов</h3>
+          <p class="main-reasons__text">— №5 —</p>
+          <p class="main-reasons__text">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main-search-hotel">
+      <h2 class="visually-hidden">Лучшие предложения гостиниц Седоны.</h2>
+      <h3 class="main-search-hotel__question">Заинтереовались?</h3>
+      <p class="main-search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        гостиниц в Седоне</p>
+      <button class="main-search-hotel__button" type="button">Найти гостинницу</button>
+    </section>
+
+    <section class="main-search-map">
+      <h2 class="visually-hidden">Как нас найти.</h2>
+      <img src="img/map-mobile.jpg" alt="Координаты Седоны на карте." width="320" height="350">
+    </section>
+  </main>
+  <footer class="main-footer">
+    <h2 class="visually-hidden">Посетите Седону.</h2>
+    <p class="main-footer__tag">#visitsedona</p>
+    <div class="main-footer__social-box">
+      <ul class="main-footer__social-list">
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="https://vk.com/htmlacademy" target="_blank">
+            <span class="visually-hidden">ВКонтакте</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" fill="none" role="img"
+              aria-label="Vkontakte.">
+              <path fill="#fff" fill-rule="evenodd"
+                d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="https://t.me/htmlacademy" target="_blank">
+            <span class="visually-hidden">Телеграм</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none" role="img"
+              aria-label="Telegram.">
+              <path fill="#fff"
+                d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <span class="visually-hidden">YouTube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none" role="img" aria-label="YouTube.">
+              <path fill="#fff"
+                d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__created-box">
+      <p class="main-footer__created-text">Разработано</p>
+      <a href="https://htmlacademy.ru/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" role="img"
+          aria-label="HTML Academy.">
+          <path fill="#000"
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
