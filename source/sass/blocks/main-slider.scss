@@ -1,0 +1,12 @@
+ .main-slider {
+   position: relative;
+   background-image: url('../img/svg/slider-text-mobile.svg'), url('../img/slider-mobile.jpg');
+   background-size: auto, cover;
+   background-repeat: no-repeat, no-repeat;
+   background-position: top 90px center, center;
+   background-color: $white;
+   margin: auto;
+   height: 389px;
+   width: 100%;
+   margin-bottom: 32px;
+ }

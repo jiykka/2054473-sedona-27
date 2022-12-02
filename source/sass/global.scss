@@ -1,0 +1,26 @@
+body {
+  @include font-normal;
+  background-color: $white;
+  margin: 0 auto;
+  color: $gray;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  min-height: 100%;
+  outline: 1px solid #ff0000;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.toggle-hidden {
+  display:none;
+}

@@ -1,0 +1,9 @@
+.main-header {
+  position:relative;
+  &__logo {
+    margin-left: 65px;
+    position: absolute;
+    z-index: 1;
+  }
+
+}

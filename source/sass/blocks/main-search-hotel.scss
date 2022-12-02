@@ -1,0 +1,29 @@
+.main-search-hotel {
+  background-color: $white;
+  display: block;
+  padding: 36px 18px 49px 18px;
+  text-align: center;
+
+  &__question {
+    @include font-large;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    @include font-normal;
+    text-transform: uppercase;
+  }
+
+  &__button--blue {
+    border: none;
+    background-color: $aqua;
+    @include font-large;
+    color: $white;
+    text-transform: uppercase;
+    padding: 16px 42px;
+    cursor: pointer;
+  }
+
+}

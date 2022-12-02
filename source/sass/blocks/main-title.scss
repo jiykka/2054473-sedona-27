@@ -1,0 +1,22 @@
+.main-title {
+  margin-bottom: 16px;
+  padding: 0 18px 0 18px;
+
+  &__box {
+    text-align: center;
+  }
+
+  &__slogan {
+    @include font-bold;
+    text-transform: uppercase;
+    color: $black;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  &__reasons {
+    @include font-normal;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}

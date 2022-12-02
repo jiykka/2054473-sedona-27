@@ -1,1 +1,24 @@
+<<<<<<< Updated upstream
 // Начните писать стили здесь
+=======
+
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./global.scss";
+@import "./blocks/fonts.scss";
+@import "./blocks/header.scss";
+@import "./blocks/header-nav.scss";
+@import "./blocks/main.scss";
+@import "./blocks/main-slider.scss";
+@import "./blocks/main-title.scss";
+@import "./blocks/main-reasons.scss";
+@import "./blocks/main-search-hotel.scss";
+@import "./blocks/main-search-map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/footer-socials.scss";
+@import "./blocks/footer-created.scss";
+
+// Я так и не понимял почему если прописать тут use - то не будет работать :) Вечером почитаю про use
+
+
+>>>>>>> Stashed changes
