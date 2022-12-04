@@ -1,0 +1,133 @@
+@use '../global/use.scss';
+
+.main-reasons {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    &--blue {
+      background-color: use.$aqua;
+      padding: 54px 0 40px;
+    }
+  }
+
+  &__caption {
+    @include use.font-bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 11px;
+
+    &--white {
+      color: use.$white;
+    }
+  }
+
+  &__text {
+    @include use.font-normal;
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 255px;
+    display: inline;
+
+    &--white {
+      color: use.$white;
+    }
+  }
+
+  &__number {
+    @include use.font-normal;
+    margin: 0;
+    margin-bottom: 17px;
+  }
+
+  &__item-image-box img {
+    display: block;
+  }
+
+  &__item-ico {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    &--home {
+      padding-bottom: 27px;
+      padding-top: 24px;
+
+      &::before {
+        content: "";
+        background-image: url('../img/svg/home.svg');
+        background-repeat: no-repeat;
+        width: 39px;
+        height: 37px;
+        margin-left: 18px;
+        margin-right: 7px;
+      }
+    }
+
+    &--food {
+      padding-bottom: 26px;
+
+      &::before {
+        content: "";
+        background-image: url('../img/svg/food.svg');
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 35px;
+        margin-left: 18px;
+        margin-right: 7px;
+      }
+    }
+
+    &--souvenir {
+      margin-bottom: 46px;
+
+      &::before {
+        content: "";
+        background-image: url('../img/svg/souvenir.svg');
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 38px;
+        margin-left: 22px;
+        margin-right: 11px;
+      }
+    }
+  }
+
+  &__item-box {
+    max-width: 237px;
+    padding-top: 8px;
+  }
+
+  &__caption-item-box,
+  &__text-item-box {
+    display: block;
+  }
+
+  &__item-silver {
+    background-color: use.$silver;
+    padding-top: 24px;
+
+    &--line::after {
+      content: "";
+      border: 1px solid use.$linecolor;
+      width: 284px;
+    }
+  }
+
+  &__text-silver {
+    padding-bottom: 24px;
+  }
+}

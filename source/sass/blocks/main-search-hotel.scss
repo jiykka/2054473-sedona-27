@@ -1,0 +1,31 @@
+@use '../global/use.scss';
+
+.main-search-hotel {
+  background-color: use.$white;
+  display: block;
+  padding: 36px 18px 49px 18px;
+  text-align: center;
+
+  &__question {
+    @include use.font-large;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    @include use.font-normal;
+    text-transform: uppercase;
+  }
+
+  &__button{
+    border: none;
+    background-color: use.$aqua;
+    @include use.font-large;
+    color: use.$white;
+    text-transform: uppercase;
+    padding: 16px 42px;
+    cursor: pointer;
+  }
+
+}
