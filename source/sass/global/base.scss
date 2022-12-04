@@ -1,8 +1,12 @@
+
 body {
-  @include font-normal;
-  background-color: $white;
+  font-family: "PT-Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #ffffff;
   margin: 0 auto;
-  color: $gray;
+  color: #333333;
   display: flex;
   flex-direction: column;
   max-width: 320px;
@@ -22,5 +26,5 @@ body {
 }
 
 .toggle-hidden {
-  display:none;
+  display: none;
 }

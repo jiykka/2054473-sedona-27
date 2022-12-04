@@ -1,14 +1,16 @@
+@use '../global/use.scss';
+
 .main-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom:23px;
+  padding-bottom: 23px;
 
   &__tag {
-    @include font-large;
+    @include use.font-large;
     text-transform: uppercase;
     text-decoration: none;
-    color: $black;
+    color: use.$black;
     margin-bottom: 34px;
   }
 
@@ -22,7 +24,7 @@
   }
 
   &__social-item {
-    background-color: $aqua;
+    background-color: use.$aqua;
     padding: 0;
   }
 
@@ -35,9 +37,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  width: 48px;
-  height: 48px;
-}
+    width: 48px;
+    height: 48px;
+  }
 
   &__social-link,
   &__created-link {
@@ -45,9 +47,9 @@
   }
 
   &__created-text {
-    @include font-normal;
+    @include use.font-normal;
     text-transform: uppercase;
-    margin:0;
-    margin-right:12px;
+    margin: 0;
+    margin-right: 12px;
   }
 }

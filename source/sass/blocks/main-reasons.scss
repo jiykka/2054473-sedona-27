@@ -1,3 +1,5 @@
+@use '../global/use.scss';
+
 .main-reasons {
 
   &__list {
@@ -14,37 +16,40 @@
     align-items: center;
     text-align: center;
     position: relative;
-  }
 
-  &__item-box--blue {
-    background-color: $aqua;
-    padding: 54px 0 40px 0;
+    &--blue {
+      background-color: use.$aqua;
+      padding: 54px 0 40px;
+    }
   }
 
   &__caption {
-    @include font-bold;
+    @include use.font-bold;
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 11px;
+
+    &--white {
+      color: use.$white;
+    }
   }
 
   &__text {
-    @include font-normal;
+    @include use.font-normal;
     text-transform: uppercase;
     margin: 0;
     max-width: 255px;
     display: inline;
+
+    &--white {
+      color: use.$white;
+    }
   }
 
   &__number {
-    @include font-normal;
+    @include use.font-normal;
     margin: 0;
     margin-bottom: 17px;
-  }
-
-  &__caption--white,
-  &__text--white {
-    color: $white;
   }
 
   &__item-image-box img {
@@ -56,21 +61,49 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-  }
 
-  &__item-ico--home {
-    padding-bottom:27px;
-    padding-top:24px;
-  }
+    &--home {
+      padding-bottom: 27px;
+      padding-top: 24px;
 
-  &__item-ico--home::before {
-    content: "";
-    background-image: url('../img/svg/home.svg');
-    background-repeat: no-repeat;
-    width: 39px;
-    height: 37px;
-    margin-left: 18px;
-    margin-right: 7px;
+      &::before {
+        content: "";
+        background-image: url('../img/svg/home.svg');
+        background-repeat: no-repeat;
+        width: 39px;
+        height: 37px;
+        margin-left: 18px;
+        margin-right: 7px;
+      }
+    }
+
+    &--food {
+      padding-bottom: 26px;
+
+      &::before {
+        content: "";
+        background-image: url('../img/svg/food.svg');
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 35px;
+        margin-left: 18px;
+        margin-right: 7px;
+      }
+    }
+
+    &--souvenir {
+      margin-bottom: 46px;
+
+      &::before {
+        content: "";
+        background-image: url('../img/svg/souvenir.svg');
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 38px;
+        margin-left: 22px;
+        margin-right: 11px;
+      }
+    }
   }
 
   &__item-box {
@@ -80,50 +113,21 @@
 
   &__caption-item-box,
   &__text-item-box {
-    display:block;
-  }
-
-  &__item-ico--food {
-    padding-bottom:26px;
-  }
-
-  &__item-ico--food::before {
-    content: "";
-    background-image: url('../img/svg/food.svg');
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 35px;
-    margin-left: 18px;
-    margin-right: 7px;
-  }
-
-  &__item-ico--souvenir {
-    margin-bottom: 46px;
-  }
-
-  &__item-ico--souvenir::before {
-    content: "";
-    background-image: url('../img/svg/souvenir.svg');
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 38px;
-    margin-left: 22px;
-    margin-right: 11px;
+    display: block;
   }
 
   &__item-silver {
-    background-color: $silver;
-    padding-top:24px;
+    background-color: use.$silver;
+    padding-top: 24px;
+
+    &--line::after {
+      content: "";
+      border: 1px solid use.$linecolor;
+      width: 284px;
+    }
   }
 
   &__text-silver {
-    padding-bottom:24px;
+    padding-bottom: 24px;
   }
-
-  &__item-silver--line::after  {
-    content:"";
-    border:1px solid $linecolor;
-    width:284px;
-  }
-
 }
