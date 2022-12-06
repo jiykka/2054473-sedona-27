@@ -1,5 +1,10 @@
 .main-header {
   position: relative;
+  width:100%;
+
+  @media (min-width: $tablet-width) {
+
+  }
 
   &__logo {
     position: absolute;
