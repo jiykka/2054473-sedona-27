@@ -6,19 +6,38 @@
   padding: 36px 18px 49px 18px;
   text-align: center;
 
+  @include use.media-tablet {
+    padding: 61px 0 58px;
+  }
+
+  &__box {
+    max-width: 435px;
+    margin: 0 auto;
+  }
+
   &__question {
     @include use.font-large;
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 32px;
+
+    @include use.media-tablet {
+      @include use.font-extralarge;
+    }
   }
 
   &__text {
     @include use.font-normal;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+
+    @include use.media-tablet {
+      margin-bottom: 40px;
+    }
   }
 
-  &__button{
+  &__button {
     border: none;
     background-color: use.$aqua;
     @include use.font-large;
@@ -26,6 +45,10 @@
     text-transform: uppercase;
     padding: 16px 42px;
     cursor: pointer;
+
+    @include use.media-tablet {
+      padding: 16px 121px;
+    }
   }
 
 }

@@ -1,4 +1,17 @@
-.main-search-map img {
-  display: block;
-  margin-bottom: 39px;
-}
+ @use '../global/use.scss';
+
+ .main-search-map {
+   margin-bottom: 39px;
+
+   @include use.media-tablet {
+     margin: 0;
+   }
+
+   & img {
+     display: block;
+     height: 350px;
+     max-width: 100%;
+     object-fit: cover;
+   }
+
+ }

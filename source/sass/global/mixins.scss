@@ -18,3 +18,31 @@
   font-size: 21px;
   line-height: 26px;
 }
+
+@mixin font-extralarge {
+  font-family: "PT-Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+}
+
+@mixin media-tablet {
+
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+
+  @media (min-width: 767px) {
+    @content;
+  }
+}

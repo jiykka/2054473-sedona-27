@@ -19,17 +19,17 @@
       </button>
       <div class="main-nav__container toggle-hidden">
         <ul class="main-nav__list">
-          <li class="main-nav__item site-list__item--current">
-            <a href="#">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -44,7 +44,7 @@
 
     <section class="main-title">
       <div class="main-title__box">
-        <h2 class="main-title__slogan">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="main-title__slogan">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <p class="main-title__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
     </section>
@@ -59,7 +59,7 @@
             своя жизнь</p>
         </li>
         <li class="main-reasons__item main-reasons__item-image-box">
-          <img src="img/sedona-city-mobile.jpg" width="320" height="260" alt="Городок Седона.">
+          <img src="img/sedona-city.jpg" width="800" height="256" alt="Городок Седона.">
         </li>
         <li class="main-reasons__item-ico main-reasons__item-ico--home">
           <div class="main-reasons__item-box">
@@ -71,7 +71,7 @@
         <li class="main-reasons__item-ico main-reasons__item-ico--food">
           <div class="main-reasons__item-box">
             <h3 class="main-reasons__caption main-reasons__caption-item-box">Еда</h3>
-            <p class="main-reasons__text main-reasons__text-item-box">Всегда заказывайте фирменный<br> бургер, вы не
+            <p class="main-reasons__text main-reasons__text-item-box">Всегда заказывайте фирменный бургер, вы не
               разочаруетесь!
             </p>
           </div>
@@ -90,37 +90,45 @@
             разумеется</p>
         </li>
         <li class="main-reasons__item main-reasons__item-image-box">
-          <img src="img/devil-bridge-mobile.jpg" width="320" height="260" alt="Мост Дьявола.">
+          <img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола.">
         </li>
         <li class="main-reasons__item main-reasons__item-silver main-reasons__item-silver--line">
-          <h3 class="main-reasons__caption">Небольшая площадь</h3>
-          <p class="main-reasons__number">— №3 —</p>
-          <p class="main-reasons__text main-reasons__text-silver">Все интересные места находятся очень близко</p>
+          <div class="main-reasons__item-silver-box">
+            <h3 class="main-reasons__caption">Небольшая площадь</h3>
+            <p class="main-reasons__number">— №3 —</p>
+            <p class="main-reasons__text main-reasons__text-silver">Все интересные места находятся очень близко</p>
+          </div>
         </li>
         <li class="main-reasons__item main-reasons__item-silver main-reasons__item-silver--line">
-          <h3 class="main-reasons__caption">Красивая дорога</h3>
-          <p class="main-reasons__number">— №4 —</p>
-          <p class="main-reasons__text main-reasons__text-silver">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <div class="main-reasons__item-silver-box">
+            <h3 class="main-reasons__caption">Красивая дорога</h3>
+            <p class="main-reasons__number">— №4 —</p>
+            <p class="main-reasons__text main-reasons__text-silver">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </li>
         <li class="main-reasons__item main-reasons__item-silver">
-          <h3 class="main-reasons__caption">Мало туристов</h3>
-          <p class="main-reasons__number">— №5 —</p>
-          <p class="main-reasons__text main-reasons__text-silver">Большинство едет в Гранд Каньон и толпится там</p>
+          <div class="main-reasons__item-silver-box">
+            <h3 class="main-reasons__caption">Мало туристов</h3>
+            <p class="main-reasons__number">— №5 —</p>
+            <p class="main-reasons__text main-reasons__text-silver">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </li>
       </ul>
     </section>
 
     <section class="main-search-hotel">
-      <h2 class="visually-hidden">Лучшие предложения гостиниц Седоны.</h2>
-      <h3 class="main-search-hotel__question">Заинтересовались?</h3>
-      <p class="main-search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-        гостиниц в Седоне</p>
+      <div class="main-search-hotel__box">
+        <h2 class="visually-hidden">Лучшие предложения гостиниц Седоны.</h2>
+        <h3 class="main-search-hotel__question">Заинтересовались?</h3>
+        <p class="main-search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
+      </div>
       <button class="main-search-hotel__button" type="button">Найти гостинницу</button>
     </section>
 
     <section class="main-search-map">
       <h2 class="visually-hidden">Как нас найти.</h2>
-      <img src="img/map-mobile.jpg" alt="Координаты Седоны на карте." width="320" height="350">
+      <img src="img/map.jpg" alt="Координаты Седоны на карте." width="1200" height="350">
     </section>
   </main>
   <footer class="main-footer">

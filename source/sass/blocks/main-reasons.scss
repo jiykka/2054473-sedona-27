@@ -8,6 +8,11 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+    @include use.media-tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -20,6 +25,11 @@
     &--blue {
       background-color: use.$aqua;
       padding: 54px 0 40px;
+
+      @include use.media-tablet {
+        padding: 42px 34px;
+        width: 188px;
+      }
     }
   }
 
@@ -28,6 +38,10 @@
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 11px;
+
+    @include use.media-tablet {
+      font-size: 21px;
+    }
 
     &--white {
       color: use.$white;
@@ -54,6 +68,13 @@
 
   &__item-image-box img {
     display: block;
+    height: 260px;
+    max-width: 100%;
+    object-fit: cover;
+
+    @include use.media-tablet {
+      width: 495px;
+    }
   }
 
   &__item-ico {
@@ -62,9 +83,19 @@
     flex-direction: row;
     align-items: flex-start;
 
+    @include use.media-tablet {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
     &--home {
       padding-bottom: 27px;
       padding-top: 24px;
+
+      @include use.media-tablet {
+        padding: 60px 30px;
+      }
 
       &::before {
         content: "";
@@ -74,11 +105,23 @@
         height: 37px;
         margin-left: 18px;
         margin-right: 7px;
+
+        @include use.media-tablet {
+          width: 77px;
+          height: 72px;
+          margin: 0;
+          margin-bottom: 26px;
+          background-size: cover;
+        }
       }
     }
 
     &--food {
       padding-bottom: 26px;
+
+      @include use.media-tablet {
+        padding: 62px 30px;
+      }
 
       &::before {
         content: "";
@@ -88,11 +131,24 @@
         height: 35px;
         margin-left: 18px;
         margin-right: 7px;
+
+        @include use.media-tablet {
+          width: 81px;
+          height: 72px;
+          margin: 0;
+          margin-bottom: 26px;
+          background-size: cover;
+        }
       }
     }
 
     &--souvenir {
       margin-bottom: 46px;
+
+      @include use.media-tablet {
+        margin: 0;
+        padding: 63px 30px;
+      }
 
       &::before {
         content: "";
@@ -102,6 +158,14 @@
         height: 38px;
         margin-left: 22px;
         margin-right: 11px;
+
+        @include use.media-tablet {
+          width: 67px;
+          height: 80px;
+          margin: 0;
+          margin-bottom: 14px;
+          background-size: cover;
+        }
       }
     }
   }
@@ -109,6 +173,19 @@
   &__item-box {
     max-width: 237px;
     padding-top: 8px;
+
+    @include use.media-tablet {
+      max-width: 190px;
+      padding: 0;
+    }
+  }
+
+  &__item-silver-box {
+    @include use.media-tablet {
+      max-width: 190px;
+      padding: 41px 30px;
+    }
+
   }
 
   &__caption-item-box,
@@ -116,14 +193,28 @@
     display: block;
   }
 
+  &__caption-item-box {
+    @include use.media-tablet {
+      margin-bottom: 21px;
+    }
+  }
+
   &__item-silver {
     background-color: use.$silver;
     padding-top: 24px;
+
+    @include use.media-tablet {
+      padding: 0;
+    }
 
     &--line::after {
       content: "";
       border: 1px solid use.$linecolor;
       width: 284px;
+
+      @include use.media-tablet {
+        display: none;
+      }
     }
   }
 
