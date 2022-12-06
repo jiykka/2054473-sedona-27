@@ -3,9 +3,9 @@
 
 .main-header {
   position: relative;
-  width:100%;
+  // width:100%;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: use.$tablet-width) {
 
   }
 
