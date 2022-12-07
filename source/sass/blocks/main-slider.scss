@@ -16,11 +16,13 @@
   @include use.media-tablet {
     background-size: auto, 100%, cover;
     height: 518px;
+    margin-bottom: 48px;
   }
 
   @include use.media-desktop {
     background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider.jpg');
     background-size: auto, auto, cover;
+    margin-bottom: 59px;
   }
 
 }

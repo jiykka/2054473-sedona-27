@@ -4,6 +4,14 @@
    margin-bottom: 16px;
    padding: 0 18px 0 18px;
 
+   @include use.media-tablet {
+     margin-bottom: 55px;
+   }
+
+   @include use.media-desktop {
+     margin-bottom: 44px;
+   }
+
    &__box {
      text-align: center;
    }

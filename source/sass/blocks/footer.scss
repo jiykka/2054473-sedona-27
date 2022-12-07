@@ -12,6 +12,10 @@
     justify-content: space-between;
   }
 
+  @include use.media-desktop {
+    padding: 36px 136px 36px 119px;
+  }
+
   &__tag {
     @include use.font-large;
     text-transform: uppercase;

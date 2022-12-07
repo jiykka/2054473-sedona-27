@@ -8,11 +8,36 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    position: relative;
 
     @include use.media-tablet {
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      margin: 0 auto;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 400px solid transparent;
+      border-top: 31px solid use.$white;
+
+      @include use.media-tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__list-box {
+
+    @include use.media-tablet {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
   }
 
   &__item {
@@ -25,10 +50,16 @@
     &--blue {
       background-color: use.$aqua;
       padding: 54px 0 40px;
+      justify-content: center;
 
       @include use.media-tablet {
-        padding: 42px 34px;
-        width: 188px;
+        padding: 42px 33px;
+        max-width: 190px;
+      }
+
+      @include use.media-desktop {
+        padding: 52px 50px;
+        max-width: 300px;
       }
     }
   }
@@ -41,6 +72,9 @@
 
     @include use.media-tablet {
       font-size: 21px;
+      margin: 0 auto;
+      margin-bottom: 11px;
+      max-width: 150px;
     }
 
     &--white {
@@ -52,7 +86,6 @@
     @include use.font-normal;
     text-transform: uppercase;
     margin: 0;
-    max-width: 255px;
     display: inline;
 
     &--white {
@@ -75,6 +108,10 @@
     @include use.media-tablet {
       width: 495px;
     }
+
+    @include use.media-desktop {
+      width: 800px;
+    }
   }
 
   &__item-ico {
@@ -82,6 +119,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
 
     @include use.media-tablet {
       flex-direction: column;
@@ -95,6 +133,10 @@
 
       @include use.media-tablet {
         padding: 60px 30px;
+      }
+
+      @include use.media-desktop {
+        padding: 69px 50px;
       }
 
       &::before {
@@ -121,6 +163,10 @@
 
       @include use.media-tablet {
         padding: 62px 30px;
+      }
+
+      @include use.media-desktop {
+        padding: 71px 50px;
       }
 
       &::before {
@@ -150,6 +196,10 @@
         padding: 63px 30px;
       }
 
+      @include use.media-desktop {
+        padding: 68px 50px;
+      }
+
       &::before {
         content: "";
         background-image: url('../img/svg/souvenir.svg');
@@ -171,21 +221,32 @@
   }
 
   &__item-box {
-    max-width: 237px;
+    width: 237px;
     padding-top: 8px;
 
     @include use.media-tablet {
-      max-width: 190px;
+      width: 190px;
       padding: 0;
+    }
+
+    @include use.media-desktop {
+      width: 300px;
     }
   }
 
   &__item-silver-box {
+    margin-bottom: 24px;
+
     @include use.media-tablet {
       max-width: 190px;
       padding: 41px 30px;
+      margin-bottom: 0;
     }
 
+    @include use.media-desktop {
+      max-width: 300px;
+      padding: 51px 50px;
+    }
   }
 
   &__caption-item-box,
@@ -218,7 +279,4 @@
     }
   }
 
-  &__text-silver {
-    padding-bottom: 24px;
-  }
 }
