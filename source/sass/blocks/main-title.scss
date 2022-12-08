@@ -1,24 +1,36 @@
  @use '../global/use.scss';
 
-.main-title {
-  margin-bottom: 16px;
-  padding: 0 18px 0 18px;
+ .main-title {
+   margin-bottom: 16px;
+   padding: 0 18px 0 18px;
 
-  &__box {
-    text-align: center;
-  }
+   @include use.media-tablet {
+     margin-bottom: 55px;
+   }
 
-  &__slogan {
-    @include use.font-bold;
-    text-transform: uppercase;
-    color: use.$black;
-    margin: 0;
-    margin-bottom: 35px;
-  }
+   @include use.media-desktop {
+     margin-bottom: 44px;
+   }
 
-  &__reasons {
-    @include use.font-normal;
-    text-transform: uppercase;
-    margin: 0;
-  }
-}
+   &__box {
+     text-align: center;
+   }
+
+   &__slogan {
+     @include use.font-bold;
+     text-transform: uppercase;
+     color: use.$color-black;
+     margin: 0;
+     margin-bottom: 35px;
+
+     @include use.media-tablet {
+       @include use.font-large;
+     }
+   }
+
+   &__reasons {
+     @include use.font-normal;
+     text-transform: uppercase;
+     margin: 0;
+   }
+ }

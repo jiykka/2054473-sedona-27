@@ -1,5 +1,8 @@
+@use '../global/use.scss';
+
 .main-header {
   position: relative;
+  width: 100%;
 
   &__logo {
     position: absolute;
@@ -8,5 +11,4 @@
     transform: translateX(-50%);
     z-index: 1;
   }
-
 }

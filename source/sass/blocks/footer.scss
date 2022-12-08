@@ -6,12 +6,26 @@
   align-items: center;
   padding-bottom: 23px;
 
+  @include use.media-tablet {
+    flex-direction: row;
+    padding: 36px 76px 36px 60px;
+    justify-content: space-between;
+  }
+
+  @include use.media-desktop {
+    padding: 36px 136px 36px 119px;
+  }
+
   &__tag {
     @include use.font-large;
     text-transform: uppercase;
     text-decoration: none;
-    color: use.$black;
+    color: use.$color-black;
     margin-bottom: 34px;
+
+    @include use.media-tablet {
+      margin: 0;
+    }
   }
 
   &__social-list {
@@ -21,10 +35,14 @@
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
+
+    @include use.media-tablet {
+      margin: 0;
+    }
   }
 
   &__social-item {
-    background-color: use.$aqua;
+    background-color: use.$color-aqua;
     padding: 0;
   }
 
