@@ -11,24 +11,24 @@
     list-style: none;
     position: relative;
 
-    @include use.media-tablet {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    &::after {
+    &::before {
       content: "";
       position: absolute;
-      margin: 0 auto;
+      z-index: 1;
       top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 400px solid transparent;
-      border-top: 31px solid use.$color-white;
+      height: 0;
+      border-style: solid;
+      border-color: use.$color-white transparent transparent transparent;
+      border-width: 20px calc(100vw / 2) 0 calc(100vw / 2);
 
       @include use.media-tablet {
         display: none;
       }
+    }
+
+    @include use.media-tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
@@ -234,16 +234,8 @@
   }
 
   &__item-silver-box {
-    border-bottom: 1px solid use.$color-bottom-line;
-    padding-bottom: 24px;
-
-    &--noline {
-      margin-bottom: 24px;
-      border-bottom: none;
-    }
 
     @include use.media-tablet {
-      border-bottom: none;
       max-width: 190px;
       padding: 41px 30px;
       margin-bottom: 0;
@@ -268,7 +260,27 @@
 
   &__item-silver {
     background-color: use.$color-silver;
+
     padding-top: 24px;
+
+    &::after {
+      content: "";
+      border-bottom: 1px solid use.$color-bottom-line;
+      width: 284px;
+      padding-bottom: 24px;
+
+      @include use.media-tablet {
+        display: none;
+      }
+    }
+
+    &:last-of-type {
+      padding-bottom: 24px;
+
+      &::after {
+        display: none;
+      }
+    }
 
     @include use.media-tablet {
       padding: 0;
