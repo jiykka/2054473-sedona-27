@@ -19,14 +19,13 @@
    &__slogan {
      @include use.font-bold;
      text-transform: uppercase;
-     color: use.$black;
+     color: use.$color-black;
      margin: 0;
      margin-bottom: 35px;
 
      @include use.media-tablet {
        @include use.font-large;
      }
-
    }
 
    &__reasons {

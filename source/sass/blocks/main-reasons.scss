@@ -1,6 +1,7 @@
 @use '../global/use.scss';
 
 .main-reasons {
+  overflow-x: hidden;
 
   &__list {
     display: flex;
@@ -23,7 +24,7 @@
       left: 50%;
       transform: translateX(-50%);
       border: 400px solid transparent;
-      border-top: 31px solid use.$white;
+      border-top: 31px solid use.$color-white;
 
       @include use.media-tablet {
         display: none;
@@ -32,12 +33,10 @@
   }
 
   &__list-box {
-
     @include use.media-tablet {
       display: flex;
       flex-direction: row-reverse;
     }
-
   }
 
   &__item {
@@ -48,7 +47,7 @@
     position: relative;
 
     &--blue {
-      background-color: use.$aqua;
+      background-color: use.$color-aqua;
       padding: 54px 0 40px;
       justify-content: center;
 
@@ -78,7 +77,7 @@
     }
 
     &--white {
-      color: use.$white;
+      color: use.$color-white;
     }
   }
 
@@ -89,7 +88,7 @@
     display: inline;
 
     &--white {
-      color: use.$white;
+      color: use.$color-white;
     }
   }
 
@@ -235,9 +234,16 @@
   }
 
   &__item-silver-box {
-    margin-bottom: 24px;
+    border-bottom: 1px solid use.$color-bottom-line;
+    padding-bottom: 24px;
+
+    &--noline {
+      margin-bottom: 24px;
+      border-bottom: none;
+    }
 
     @include use.media-tablet {
+      border-bottom: none;
       max-width: 190px;
       padding: 41px 30px;
       margin-bottom: 0;
@@ -261,22 +267,11 @@
   }
 
   &__item-silver {
-    background-color: use.$silver;
+    background-color: use.$color-silver;
     padding-top: 24px;
 
     @include use.media-tablet {
       padding: 0;
     }
-
-    &--line::after {
-      content: "";
-      border: 1px solid use.$linecolor;
-      width: 284px;
-
-      @include use.media-tablet {
-        display: none;
-      }
-    }
   }
-
 }

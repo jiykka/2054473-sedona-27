@@ -20,7 +20,7 @@
     @include use.font-large;
     text-transform: uppercase;
     text-decoration: none;
-    color: use.$black;
+    color: use.$color-black;
     margin-bottom: 34px;
 
     @include use.media-tablet {
@@ -42,7 +42,7 @@
   }
 
   &__social-item {
-    background-color: use.$aqua;
+    background-color: use.$color-aqua;
     padding: 0;
   }
 
@@ -70,5 +70,4 @@
     margin: 0;
     margin-right: 12px;
   }
-
 }

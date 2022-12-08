@@ -61,7 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: use.$aqua;
+    background-color: use.$color-aqua;
     mix-blend-mode: normal;
     box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -115,7 +115,7 @@
 
   &__link {
     @include use.font-bold;
-    color: use.$white;
+    color: use.$color-white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 17px 0 12px 0;
@@ -123,12 +123,12 @@
     @include use.media-tablet {
       @include use.font-normal;
       font-weight: 700;
-      color: use.$black;
+      color: use.$color-black;
       padding: 0;
 
       @include use.media-tablet {
         &--current {
-          color: use.$current;
+          color: use.$color-link-current;
         }
       }
     }

@@ -1,14 +1,10 @@
 @use '../global/use.scss';
 
 .main-search-hotel {
-  background-color: use.$white;
+  background-color: use.$color-white;
   display: block;
   padding: 36px 18px 49px 18px;
   text-align: center;
-
-  @include use.media-tablet {
-    padding: 61px 0 58px;
-  }
 
   &__box {
     max-width: 435px;
@@ -39,9 +35,9 @@
 
   &__button {
     border: none;
-    background-color: use.$aqua;
+    background-color: use.$color-aqua;
     @include use.font-large;
-    color: use.$white;
+    color: use.$color-white;
     text-transform: uppercase;
     padding: 16px 34px;
     cursor: pointer;
@@ -51,4 +47,7 @@
     }
   }
 
+  @include use.media-tablet {
+    padding: 61px 0 58px;
+  }
 }
