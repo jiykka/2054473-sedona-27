@@ -26,6 +26,12 @@
   line-height: 26px;
 }
 
+@mixin media-mobile-only {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin media-tablet {
   @media (min-width: 768px) {
     @content;
