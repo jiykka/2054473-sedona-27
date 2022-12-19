@@ -13,6 +13,10 @@
   max-width: 100%;
   object-fit: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: inherit, inherit, url('../img/slider@2x.jpg');
+  }
+
   @include use.media-tablet {
     background-size: auto, 100%, cover;
     height: 518px;
@@ -21,8 +25,9 @@
 
   @include use.media-desktop {
     background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider.jpg');
-    background-size: auto, auto, cover;
+    background-position: top 90px center, bottom -1px center, center;
     margin-bottom: 59px;
   }
+
 
 }
