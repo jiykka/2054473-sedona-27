@@ -35,6 +35,8 @@
   }
 
   &__list-box {
+    padding: 0;
+
     @include use.media-tablet {
       display: flex;
       flex-direction: row-reverse;
@@ -47,6 +49,7 @@
     align-items: center;
     text-align: center;
     position: relative;
+    flex-grow: 1;
 
     &--blue {
       background-color: use.$color-aqua;
@@ -55,12 +58,12 @@
 
       @include use.media-tablet {
         padding: 46px 33px;
-        max-width: 190px;
+        min-width: 190px;
       }
 
       @include use.media-desktop {
         padding: 52px 50px;
-        max-width: 300px;
+        min-width: 300px;
       }
     }
   }
@@ -103,17 +106,19 @@
   &__item-image-box img {
     display: block;
     height: 260px;
-    max-width: 100%;
+    // max-width: 100%;
+    width: auto;
     object-fit: cover;
+
 
     @include use.media-tablet {
       height: 256px;
-      width: 512px;
+      // width: 512px;
     }
 
-    @include use.media-desktop {
-      width: 800px;
-    }
+    // @include use.media-desktop {
+    //   width: 800px;
+    // }
   }
 
   &__item-ico {
@@ -122,6 +127,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    flex-grow: 1;
 
     @include use.media-tablet {
       flex-direction: column;

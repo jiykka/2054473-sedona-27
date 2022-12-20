@@ -5,7 +5,7 @@
   background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom.svg'), url('../img/slider.jpg');
   background-size: 282px, auto, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top 90px center, bottom 0 center, center;
+  background-position: top 90px center, bottom -0.5px center, center;
   background-color: use.$color-white;
   margin: auto;
   height: 389px;
@@ -14,7 +14,7 @@
   object-fit: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: inherit, inherit, url('../img/slider@2x.jpg');
+    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider@2x.jpg');
   }
 
   @include use.media-tablet {
