@@ -41,6 +41,7 @@
     text-transform: uppercase;
     padding: 16px 34px;
     cursor: pointer;
+    max-width: 442px;
 
     @include use.media-tablet {
       padding: 16px 121px;

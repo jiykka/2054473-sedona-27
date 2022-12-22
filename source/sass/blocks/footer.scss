@@ -22,6 +22,7 @@
     text-decoration: none;
     color: use.$color-black;
     margin-bottom: 34px;
+    max-width: 136px;
 
     @include use.media-tablet {
       margin: 0;
@@ -35,6 +36,8 @@
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
+    width: 210px;
+    justify-content: center;
 
     @include use.media-tablet {
       margin: 0;
@@ -49,6 +52,7 @@
   &__created-box {
     display: flex;
     align-items: center;
+    max-width: 128px;
   }
 
   &__social-link {
@@ -57,6 +61,14 @@
     justify-content: center;
     width: 48px;
     height: 48px;
+  }
+
+  &__social-ico {
+    fill: #ffffff;
+  }
+
+  &__social-ico-academy {
+    fill: #000000;
   }
 
   &__social-link,

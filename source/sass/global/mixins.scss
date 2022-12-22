@@ -38,6 +38,12 @@
   }
 }
 
+@mixin media-middle {
+  @media (min-width: 1050px) {
+    @content;
+  }
+}
+
 @mixin media-desktop {
   @media (min-width: 1200px) {
     @content;

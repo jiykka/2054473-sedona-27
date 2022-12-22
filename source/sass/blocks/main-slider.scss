@@ -2,7 +2,7 @@
 
 .main-slider {
   position: relative;
-  background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom.svg'), url('../img/slider.jpg');
+  background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom.svg'), url('../img/slider.webp');
   background-size: 282px, auto, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top 90px center, bottom -0.5px center, center;
@@ -14,7 +14,7 @@
   object-fit: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider@2x.jpg');
+    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider@2x.webp');
   }
 
   @include use.media-tablet {
@@ -24,7 +24,7 @@
   }
 
   @include use.media-desktop {
-    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider.jpg');
+    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider.webp');
     background-position: top 90px center, bottom -1px center, center;
     margin-bottom: 59px;
   }
