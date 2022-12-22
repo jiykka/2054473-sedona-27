@@ -125,7 +125,8 @@
 
     @include use.media-tablet {
       min-height: 56px;
-      width: 153px;
+      max-width: 153px;
+      flex-grow: 1;
       background-color: transparent;
       box-shadow: none;
       border-bottom: none;
@@ -136,7 +137,9 @@
     }
 
     @include use.media-desktop {
-      width: 259px;
+      max-width: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
