@@ -2,6 +2,7 @@
 
 .main-slider {
   position: relative;
+  background-color: #d4e6f0;
   background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom.svg'), url('../img/slider.jpg');
   background-size: 282px, auto, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -12,10 +13,6 @@
   margin-bottom: 32px;
   max-width: 100%;
   object-fit: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider@2x.jpg');
-  }
 
   @include use.media-tablet {
     background-size: auto, 100%, cover;
@@ -29,5 +26,7 @@
     margin-bottom: 59px;
   }
 
-
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/slider@2x.jpg');
+  }
 }

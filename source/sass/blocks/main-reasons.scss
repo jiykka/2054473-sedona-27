@@ -109,11 +109,14 @@
     @include use.font-normal;
     margin: 0;
     margin-bottom: 17px;
+
+    &--white {
+      color: use.$color-white;
+    }
   }
 
   &__item-image {
     height: 260px;
-
 
     @include use.media-tablet {
       height: 100%;
@@ -244,7 +247,6 @@
   }
 
   &__item-silver-box {
-
     @include use.media-tablet {
       max-width: 190px;
       padding: 57px 33px;

@@ -1,16 +1,16 @@
- @use '../global/use.scss';
+@use '../global/use.scss';
 
- .main-search-map {
-   margin-bottom: 39px;
+.main-search-map {
+  margin-bottom: 39px;
 
-   @include use.media-tablet {
-     margin: 0;
-   }
+  @include use.media-tablet {
+    margin: 0;
+  }
 
-   img {
-     display: block;
-     height: 350px;
-     max-width: 100%;
-     object-fit: cover;
-   }
- }
+  img {
+    display: block;
+    height: 350px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
