@@ -1,7 +1,7 @@
 @use '../global/use.scss';
 
 .main-nav {
-  height: 56px;
+  min-height: 56px;
   position: relative;
 
   &__toggle {
@@ -84,6 +84,7 @@
 
   &__item {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -123,7 +124,6 @@
     }
 
     @include use.media-tablet {
-      min-height: 56px;
       max-width: 153px;
       flex-grow: 1;
       background-color: transparent;
@@ -135,10 +135,20 @@
       }
     }
 
+    @include use.media-middle {
+      max-width: 183px;
+
+      &:nth-child(3) {
+        margin-left: calc(100% - 880px);
+      }
+    }
+
     @include use.media-desktop {
-      max-width: 200px;
-      padding-left: 20px;
-      padding-right: 20px;
+      max-width: 240px;
+
+      &:nth-child(3) {
+        margin-left: calc(100% - 960px);
+      }
     }
   }
 
@@ -153,7 +163,7 @@
       @include use.font-normal;
       font-weight: 700;
       color: use.$color-black;
-      padding: 0;
+      padding: 17px 20px;
 
       @include use.media-tablet {
         &--current {
