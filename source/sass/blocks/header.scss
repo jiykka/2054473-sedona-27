@@ -10,5 +10,17 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      outline: 2px solid use.$color-black;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

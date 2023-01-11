@@ -46,6 +46,23 @@
     @include use.media-tablet {
       padding: 16px 121px;
     }
+
+    &:hover {
+      background-color: use.$color-aqua-dark;
+    }
+
+    &:focus-visible {
+      outline: 2px solid use.$color-black;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: use.$color-aqua-darker;
+    }
+
+    &:disabled {
+      background-color: use.$color-disabled;
+    }
   }
 
   @include use.media-tablet {
