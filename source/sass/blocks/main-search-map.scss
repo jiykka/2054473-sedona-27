@@ -4,17 +4,6 @@
   margin-bottom: 39px;
   position: relative;
 
-  &::after {
-    content: '';
-    height: 27px;
-    width: 27px;
-    background-image: url('../img/svg/map-marker.svg');
-    position: absolute;
-    top: 164px;
-    left: 48.5%;
-    cursor: pointer;
-  }
-
   @include use.media-tablet {
     margin: 0;
   }
@@ -24,5 +13,30 @@
     height: 350px;
     max-width: 100%;
     object-fit: cover;
+  }
+
+  &__button {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    background-color: use.$color-aqua;
+    border: 5px solid use.$color-white;
+    border-radius: 50%;
+    top: 164px;
+    left: 48.5%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: use.$color-aqua-dark;
+    }
+
+    &:focus-visible {
+      outline: 2px solid use.$color-black;
+    }
+
+    &:active {
+      background-color: use.$color-aqua-darker;
+      box-shadow: 0 2px 5px rgba(1, 1, 1, 0.6);
+    }
   }
 }

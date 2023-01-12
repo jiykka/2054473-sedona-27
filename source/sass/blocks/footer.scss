@@ -27,6 +27,18 @@
     @include use.media-tablet {
       margin: 0;
     }
+
+    &:hover {
+      color: use.$color-aqua;
+    }
+
+    &:focus-visible {
+      outline: 2px solid use.$color-black;
+    }
+
+    &:active {
+      color: use.$color-silver-active;
+    }
   }
 
   &__social-list {
@@ -46,7 +58,6 @@
   }
 
   &__social-item {
-    background-color: use.$color-aqua;
     padding: 0;
   }
 
@@ -62,14 +73,31 @@
     justify-content: center;
     width: 48px;
     height: 48px;
+    background-color: use.$color-aqua;
+
+    &:hover {
+      background-color: use.$color-aqua-dark;
+    }
+
+    &:focus-visible {
+      outline: 2px solid use.$color-black;
+    }
+
+    &:active {
+      background-color: use.$color-aqua-darker;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
   }
 
   &__social-ico {
-    fill: #ffffff;
+    fill: use.$color-white;
   }
 
   &__ico-academy {
-    fill: #000000;
+    fill: use.$color-black;
   }
 
   &__social-link,
@@ -77,10 +105,33 @@
     display: inline-flex;
   }
 
-  &__created-text {
+  &__created-link {
     @include use.font-normal;
+    color: use.$color-black;
     text-transform: uppercase;
+    text-decoration: none;
     margin: 0;
-    margin-right: 12px;
+
+    &:hover {
+      color: use.$color-aqua;
+      fill: use.$color-aqua;
+    }
+
+
+    &:focus-visible {
+      outline: 2px solid use.$color-black;
+    }
+
+    &:active {
+      color: use.$color-silver-active;
+      fill: use.$color-silver-active;
+    }
   }
+
+  &__created-text {
+    padding-right: 10px;
+    align-self: center;
+  }
+
+
 }

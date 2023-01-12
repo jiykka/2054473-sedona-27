@@ -62,6 +62,7 @@
 
     &:disabled {
       background-color: use.$color-disabled;
+      cursor: default;
     }
   }
 
