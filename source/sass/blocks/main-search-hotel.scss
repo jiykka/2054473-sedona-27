@@ -3,7 +3,7 @@
 .main-search-hotel {
   background-color: use.$color-white;
   display: block;
-  padding: 36px 18px 49px 18px;
+  padding: 38px 18px 49px 18px;
   text-align: center;
 
   &__box {
@@ -15,7 +15,7 @@
     @include use.font-large;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 21px;
 
     @include use.media-tablet {
       @include use.font-extralarge;
@@ -37,9 +37,10 @@
     border: none;
     background-color: use.$color-aqua;
     @include use.font-large;
+    font-size: 19.6px;
     color: use.$color-white;
     text-transform: uppercase;
-    padding: 16px 34px;
+    padding: 16px 49px;
     cursor: pointer;
     max-width: 442px;
 

@@ -1,7 +1,7 @@
 @use '../global/use.scss';
 
 .main-search-map {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   position: relative;
 
   @include use.media-tablet {
@@ -22,8 +22,8 @@
     background-color: use.$color-aqua;
     border: 5px solid use.$color-white;
     border-radius: 50%;
-    top: 164px;
-    left: 48.5%;
+    top: 161px;
+    left: 45.5%;
     cursor: pointer;
 
     &:hover {

@@ -1,7 +1,9 @@
 @use '../global/use.scss';
 
 .main-title {
-  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 33px;
   padding: 0 18px 0 18px;
 
   @include use.media-tablet {
@@ -14,14 +16,20 @@
 
   &__box {
     text-align: center;
+
+    @include use.media-mobile-only {
+      max-width: 270px;
+    }
   }
 
   &__slogan {
     @include use.font-bold;
+    line-height: 27px;
     text-transform: uppercase;
     color: use.$color-black;
     margin: 0;
     margin-bottom: 35px;
+    margin-left: -2px;
 
     @include use.media-tablet {
       @include use.font-large;

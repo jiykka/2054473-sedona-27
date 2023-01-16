@@ -21,7 +21,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: use.$color-black;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     max-width: 136px;
 
     @include use.media-tablet {
@@ -129,7 +129,7 @@
   }
 
   &__created-text {
-    padding-right: 10px;
+    padding-right: 13px;
     align-self: center;
   }
 

@@ -43,6 +43,10 @@
       @include use.media-tablet {
         flex-direction: row-reverse;
       }
+
+      & li:first-of-type {
+        padding: 38px 20px 36px;
+      }
     }
   }
 
@@ -56,7 +60,7 @@
 
     &--blue {
       background-color: use.$color-aqua;
-      padding: 54px 0 40px;
+      padding: 53px 20px 38px;
       justify-content: center;
 
       @include use.media-tablet {
@@ -80,17 +84,25 @@
     @include use.font-bold;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 11px;
+
 
     @include use.media-tablet {
       font-size: 21px;
       margin: 0 auto;
-      margin-bottom: 11px;
       max-width: 150px;
     }
 
     &--white {
       color: use.$color-white;
+      margin-bottom: 11px;
+    }
+
+    &--black {
+      margin-bottom: 17px;
+    }
+
+    &--silver {
+      margin-bottom: 12px;
     }
   }
 
@@ -140,7 +152,7 @@
     }
 
     &--home {
-      padding-bottom: 27px;
+      padding-bottom: 25px;
       padding-top: 24px;
 
       @include use.media-tablet {
@@ -157,8 +169,8 @@
         background-repeat: no-repeat;
         width: 39px;
         height: 37px;
-        margin-left: 18px;
-        margin-right: 7px;
+        margin-left: -1px;
+        margin-right: 8px;
 
         @include use.media-tablet {
           width: 77px;
@@ -171,7 +183,7 @@
     }
 
     &--food {
-      padding-bottom: 26px;
+      padding-bottom: 25px;
 
       @include use.media-tablet {
         padding: 62px 33px;
@@ -187,7 +199,7 @@
         background-repeat: no-repeat;
         width: 40px;
         height: 35px;
-        margin-left: 18px;
+        margin-left: -1px;
         margin-right: 7px;
 
         @include use.media-tablet {
@@ -201,7 +213,7 @@
     }
 
     &--souvenir {
-      margin-bottom: 46px;
+      margin-bottom: 43px;
 
       @include use.media-tablet {
         margin: 0;
@@ -218,7 +230,7 @@
         background-repeat: no-repeat;
         width: 32px;
         height: 38px;
-        margin-left: 22px;
+        margin-left: 3px;
         margin-right: 11px;
 
         @include use.media-tablet {
@@ -247,6 +259,12 @@
   }
 
   &__item-silver-box {
+    @include use.media-mobile-only {
+      max-width: 246px;
+    }
+  }
+
+  &__item-silver-box {
     @include use.media-tablet {
       max-width: 190px;
       padding: 57px 33px;
@@ -259,10 +277,12 @@
     }
   }
 
-  &__caption-item-box,
-  &__text-item-box {
-    display: block;
-  }
+  // &__caption-item-box,
+  // &__text-item-box {
+  //   display: block;
+  // }
+
+
 
   &__caption-item-box {
     @include use.media-tablet {
@@ -278,7 +298,7 @@
       content: "";
       border-bottom: 1px solid use.$color-bottom-line;
       width: 284px;
-      padding-bottom: 24px;
+      padding-bottom: 23px;
 
       @include use.media-tablet {
         display: none;
@@ -286,7 +306,7 @@
     }
 
     &:last-of-type {
-      padding-bottom: 24px;
+      padding-bottom: 29px;
 
       &::after {
         display: none;
