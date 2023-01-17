@@ -135,7 +135,7 @@
     }
 
     @include use.media-tablet {
-      max-width: 153px;
+      max-width: 154px;
       flex-grow: 1;
       background-color: transparent;
       box-shadow: none;
@@ -192,7 +192,7 @@
       @include use.font-normal;
       font-weight: 700;
       color: use.$color-black;
-      padding: 17px 20px 18px 20px;
+      padding: 19px 20px 16px 20px;
 
       &:hover {
         color: use.$color-aqua;
@@ -209,6 +209,7 @@
       @include use.media-tablet {
         &--current {
           color: use.$color-link-current;
+          margin-left: 2px;
         }
       }
     }

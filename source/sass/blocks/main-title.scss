@@ -27,12 +27,11 @@
     line-height: 27px;
     text-transform: uppercase;
     color: use.$color-black;
-    margin: 0;
-    margin-bottom: 35px;
-    margin-left: -2px;
+    margin: 0 0 35px -2px;
 
     @include use.media-tablet {
       @include use.font-large;
+      margin: 0 0 29px -2px;
     }
   }
 
