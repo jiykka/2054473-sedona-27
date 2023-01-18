@@ -45,7 +45,11 @@
       }
 
       & li:first-of-type {
-        padding: 49px 30px 29px;
+        padding: 53px 30px 29px;
+
+        @include use.media-desktop {
+          padding: 29px 94px 28px;
+        }
       }
     }
   }
@@ -74,7 +78,7 @@
       }
 
       @include use.media-desktop {
-        padding: 52px 50px;
+        padding: 21px 69px 20px 71px;
         max-width: 400px;
       }
     }
@@ -107,10 +111,14 @@
       @include use.media-tablet {
         margin-bottom: 24px;
       }
+
+      @include use.media-desktop {
+        margin-bottom: 23px;
+      }
     }
 
     &--silver {
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
   }
 
@@ -118,10 +126,14 @@
     @include use.font-normal;
     text-transform: uppercase;
     margin: 0;
-    display: inline;
+    display: block;
 
     &--white {
       color: use.$color-white;
+
+      @include use.media-desktop {
+        margin-left: -2px;
+      }
     }
   }
 
@@ -129,6 +141,10 @@
     @include use.font-normal;
     margin: 0;
     margin-bottom: 17px;
+
+    @include use.media-tablet {
+      margin-bottom: 22px;
+    }
 
     &--white {
       color: use.$color-white;
@@ -168,11 +184,13 @@
       padding-top: 24px;
 
       @include use.media-tablet {
+        width: 190px;
         padding: 58px 33px 52px;
       }
 
       @include use.media-desktop {
         padding: 69px 50px;
+        width: 300px;
       }
 
       &::before {
@@ -185,11 +203,19 @@
         margin-right: 8px;
 
         @include use.media-tablet {
+          background-image: url('../img/svg/home-tablet.svg');
           width: 77px;
           height: 72px;
           margin: 0;
           margin-bottom: 28px;
-          background-size: cover;
+          margin-left: -4px;
+        }
+
+        @include use.media-desktop {
+          background-image: url('../img/svg/home-desktop.svg');
+          width: 80px;
+          height: 72px;
+          margin-left: -2px;
         }
       }
     }
@@ -198,11 +224,13 @@
       padding-bottom: 25px;
 
       @include use.media-tablet {
-        padding: 60px 33px;
+        padding: 60px 50px;
+        width: 156px;
       }
 
       @include use.media-desktop {
         padding: 71px 50px;
+        width: 300px;
       }
 
       &::before {
@@ -215,11 +243,18 @@
         margin-right: 7px;
 
         @include use.media-tablet {
-          width: 80px;
-          height: 70px;
+          background-image: url('../img/svg/food-tablet.svg');
+          width: 81px;
+          height: 68px;
           margin: 0;
-          margin-bottom: 26px;
-          background-size: cover;
+          margin-bottom: 28px;
+          margin-left: -4px;
+        }
+
+        @include use.media-desktop {
+          background-image: url('../img/svg/food-desktop.svg');
+          width: 73px;
+          height: 69px;
         }
       }
     }
@@ -230,10 +265,12 @@
       @include use.media-tablet {
         margin: 0;
         padding: 62px 33px;
+        width: 190px;
       }
 
       @include use.media-desktop {
         padding: 68px 50px;
+        width: 300px;
       }
 
       &::before {
@@ -246,46 +283,68 @@
         margin-right: 11px;
 
         @include use.media-tablet {
+          background-image: url('../img/svg/souvenir-tablet.svg');
           width: 67px;
-          height: 80px;
+          height: 75px;
           margin: 0;
-          margin-bottom: 14px;
-          background-size: cover;
+          margin-bottom: 16px;
+          margin-left: 4px;
         }
+
+        @include use.media-desktop {
+          background-image: url('../img/svg/souvenir-desktop.svg');
+          width: 78px;
+          height: 75px;
+          margin-bottom: 29px;
+          margin-left: -4px;
+        }
+      }
+
+      p {
+        margin-left: -2px;
       }
     }
   }
 
   &__item-box {
-    width: 237px;
+    // width: 237px;
     padding-top: 8px;
 
     @include use.media-tablet {
-      width: 190px;
       padding: 0;
     }
-
-    @include use.media-desktop {
-      width: 300px;
-    }
   }
+
+  // &__item-box-food {
+  //   @include use.media-tablet {
+  //     width: 156px;
+  //   }
+  // }
 
   &__item-silver-box {
     @include use.media-mobile-only {
       max-width: 246px;
     }
-  }
 
-  &__item-silver-box {
     @include use.media-tablet {
       max-width: 190px;
-      padding: 57px 33px;
+      padding: 54px 33px 52px;
       margin-bottom: 0;
     }
 
     @include use.media-desktop {
       max-width: 300px;
-      padding: 51px 50px;
+      padding: 63px 50px 40px;
+    }
+
+    &--four {
+      @include use.media-tablet {
+        padding: 43px 49px 42px;
+      }
+
+      @include use.media-desktop {
+        padding: 51px 50px 50px;
+      }
     }
   }
 

@@ -33,11 +33,19 @@
       @include use.font-large;
       margin: 0 0 29px -2px;
     }
+
+    @include use.media-desktop {
+      margin-left: -4px;
+    }
   }
 
   &__reasons {
     @include use.font-normal;
     text-transform: uppercase;
     margin: 0;
+
+    @include use.media-desktop {
+      margin-left: -2px;
+    }
   }
 }

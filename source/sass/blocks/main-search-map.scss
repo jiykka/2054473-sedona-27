@@ -26,6 +26,16 @@
     left: 45.5%;
     cursor: pointer;
 
+    @include use.media-tablet {
+      top: 164px;
+      left: 48%;
+    }
+
+    @include use.media-desktop {
+      top: 162px;
+      left: 48.9%;
+    }
+
     &:hover {
       background-color: use.$color-aqua-dark;
     }

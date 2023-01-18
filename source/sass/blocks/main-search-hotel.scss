@@ -19,6 +19,11 @@
 
     @include use.media-tablet {
       @include use.font-extralarge;
+      margin-bottom: 32px;
+    }
+
+    @include use.media-desktop {
+      margin-bottom: 33px;
     }
   }
 
@@ -29,7 +34,11 @@
     margin-bottom: 32px;
 
     @include use.media-tablet {
-      margin-bottom: 40px;
+      margin-bottom: 41px;
+    }
+
+    @include use.media-tablet {
+      margin-bottom: 45px;
     }
   }
 
@@ -45,7 +54,12 @@
     max-width: 442px;
 
     @include use.media-tablet {
-      padding: 16px 121px;
+      padding: 16px 135px;
+      max-width: 458px;
+    }
+
+    @include use.media-desktop {
+      padding: 17px 136px;
     }
 
     &:hover {
@@ -69,5 +83,10 @@
 
   @include use.media-tablet {
     padding: 61px 0 58px;
+  }
+
+  @include use.media-tablet {
+    padding: 61px 0 65px;
+    ;
   }
 }
