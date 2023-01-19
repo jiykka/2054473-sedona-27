@@ -55,6 +55,18 @@ img {
   }
 }
 
+.tablet-hidden {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1280px) {
+    display: block;
+  }
+}
+
 .desktop-visible {
   display: none;
 

@@ -40,12 +40,17 @@
     }
 
     &--reverse {
+
       @include use.media-tablet {
         flex-direction: row-reverse;
       }
 
       & li:first-of-type {
-        padding: 53px 30px 29px;
+        padding: 39px 30px 35px;
+
+        @include use.media-tablet {
+          padding: 53px 30px 29px;
+        }
 
         @include use.media-desktop {
           padding: 29px 94px 28px;
@@ -106,7 +111,7 @@
     }
 
     &--black {
-      margin-bottom: 17px;
+      margin-bottom: 16px;
 
       @include use.media-tablet {
         margin-bottom: 24px;
@@ -118,7 +123,11 @@
     }
 
     &--silver {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
+
+      @include use.media-tablet {
+        margin-bottom: 14px;
+      }
     }
   }
 
@@ -240,6 +249,7 @@
         width: 40px;
         height: 35px;
         margin-left: -1px;
+        margin-top: 2px;
         margin-right: 7px;
 
         @include use.media-tablet {
@@ -260,7 +270,7 @@
     }
 
     &--souvenir {
-      margin-bottom: 43px;
+      margin-bottom: 46px;
 
       @include use.media-tablet {
         margin: 0;
@@ -301,25 +311,24 @@
       }
 
       p {
-        margin-left: -2px;
+        margin-left: 0;
+
+        @include use.media-tablet {
+          margin-left: -2px;
+        }
       }
     }
   }
 
   &__item-box {
-    // width: 237px;
+    width: 237px;
     padding-top: 8px;
 
     @include use.media-tablet {
       padding: 0;
+      width: auto;
     }
   }
-
-  // &__item-box-food {
-  //   @include use.media-tablet {
-  //     width: 156px;
-  //   }
-  // }
 
   &__item-silver-box {
     @include use.media-mobile-only {
@@ -338,12 +347,15 @@
     }
 
     &--four {
+      margin-left: -2px;
+
       @include use.media-tablet {
+        margin-left: 0;
         padding: 43px 49px 42px;
       }
 
       @include use.media-desktop {
-        padding: 51px 50px 50px;
+        padding: 51px 68px 50px;
       }
     }
   }
@@ -356,7 +368,7 @@
       content: "";
       border-bottom: 1px solid use.$color-bottom-line;
       width: 284px;
-      padding-bottom: 23px;
+      padding-bottom: 24px;
 
       @include use.media-tablet {
         display: none;
