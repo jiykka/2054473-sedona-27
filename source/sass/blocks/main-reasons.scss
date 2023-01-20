@@ -53,7 +53,7 @@
         }
 
         @include use.media-desktop {
-          padding: 29px 94px 28px;
+          padding: 29px 93px 28px;
         }
       }
     }
@@ -83,8 +83,9 @@
       }
 
       @include use.media-desktop {
-        padding: 21px 69px 20px 71px;
+        padding: 22px 67px;
         max-width: 400px;
+        width: 100%;
       }
     }
   }
@@ -141,9 +142,9 @@
     &--white {
       color: use.$color-white;
 
-      @include use.media-desktop {
-        margin-left: -2px;
-      }
+      // @include use.media-desktop {
+      //   margin-left: -2px;
+      // }
     }
   }
 
@@ -166,11 +167,14 @@
   }
 
   &__item-image {
-    height: 260px;
+    min-height: 260px;
 
     @include use.media-tablet {
-      height: 100%;
       min-height: 256px;
+    }
+
+    @include use.media-desktop {
+      min-height: 257px;
     }
   }
 
@@ -266,6 +270,7 @@
           background-image: url('../img/svg/food-desktop.svg');
           width: 73px;
           height: 69px;
+          margin-bottom: 26px;
         }
       }
     }
@@ -306,7 +311,7 @@
           background-image: url('../img/svg/souvenir-desktop.svg');
           width: 78px;
           height: 75px;
-          margin-bottom: 29px;
+          margin-bottom: 27px;
           margin-left: -4px;
         }
       }
