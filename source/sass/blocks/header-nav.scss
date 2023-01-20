@@ -190,6 +190,10 @@
       &:active {
         opacity: 0.3;
       }
+
+      &--current {
+        color: use.$color-link-current;
+      }
     }
 
     @include use.media-tablet {
