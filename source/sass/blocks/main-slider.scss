@@ -2,12 +2,11 @@
 
 .main-slider {
   position: relative;
-  background-color: #d4e6f0;
+  background-color: use.$color-aqua-dark;
   background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom.svg'), url('../img/web-slider.webp');
   background-size: 282px, auto, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top 90px center, bottom -0.5px center, center;
-  background-color: use.$color-white;
   margin: auto;
   height: 389px;
   margin-bottom: 32px;
@@ -16,14 +15,14 @@
 
   @include use.media-tablet {
     background-size: auto, 100%, cover;
-    background-position: top 77px center, bottom -1px center, center;
+    background-position: top 77px center, bottom 0 center, center;
     height: 518px;
     margin-bottom: 49px;
   }
 
   @include use.media-desktop {
     background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/web-slider.webp');
-    background-position: top 78px center, bottom -1px center, center;
+    background-position: top 78px center, bottom 0 center, center;
     margin-bottom: 60px;
   }
 

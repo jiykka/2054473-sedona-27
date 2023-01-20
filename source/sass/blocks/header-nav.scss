@@ -92,6 +92,7 @@
     @include use.media-tablet {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 
@@ -135,6 +136,7 @@
     }
 
     @include use.media-tablet {
+      min-width: 144px;
       max-width: 154px;
       flex-grow: 1;
       background-color: transparent;
@@ -142,11 +144,12 @@
       border-bottom: none;
 
       &:nth-child(3) {
-        margin-left: auto;
+        margin-left: calc(100% - 617px);
       }
     }
 
     @include use.media-middle {
+      min-width: 173px;
       max-width: 183px;
 
       &:nth-child(3) {
@@ -155,6 +158,7 @@
     }
 
     @include use.media-desktop {
+      min-width: 220px;
       max-width: 240px;
 
       &:nth-child(3) {

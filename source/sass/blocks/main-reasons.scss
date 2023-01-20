@@ -136,6 +136,7 @@
     text-transform: uppercase;
     margin: 0;
     display: block;
+    white-space: normal;
 
     &--white {
       color: use.$color-white;

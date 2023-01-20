@@ -1,4 +1,6 @@
 @use './global/use.scss';
+@use './global/base.scss';
+@use './global/mixins.scss';
 @use './blocks/header.scss';
 @use './blocks/header-nav.scss';
 @use './blocks/main-slider.scss';
