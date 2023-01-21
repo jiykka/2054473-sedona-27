@@ -12,7 +12,7 @@
     position: relative;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       z-index: 1;
       top: 0;
@@ -40,7 +40,6 @@
     }
 
     &--reverse {
-
       @include use.media-tablet {
         flex-direction: row-reverse;
       }
@@ -204,7 +203,7 @@
       }
 
       &::before {
-        content: "";
+        content: '';
         background-image: url('../img/svg/home.svg');
         background-repeat: no-repeat;
         width: 39px;
@@ -244,7 +243,7 @@
       }
 
       &::before {
-        content: "";
+        content: '';
         background-image: url('../img/svg/food.svg');
         background-repeat: no-repeat;
         width: 40px;
@@ -286,7 +285,7 @@
       }
 
       &::before {
-        content: "";
+        content: '';
         background-image: url('../img/svg/souvenir.svg');
         background-repeat: no-repeat;
         width: 32px;
@@ -367,7 +366,7 @@
     padding-top: 24px;
 
     &::after {
-      content: "";
+      content: '';
       border-bottom: 1px solid use.$color-bottom-line;
       width: 284px;
       padding-bottom: 24px;
