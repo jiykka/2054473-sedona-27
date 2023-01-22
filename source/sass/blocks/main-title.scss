@@ -1,4 +1,4 @@
-@use '../global/use.scss';
+@use "../global/use.scss";
 
 .main-title {
   display: flex;
@@ -13,39 +13,40 @@
   @include use.media-desktop {
     margin-bottom: 44px;
   }
+}
 
-  &__box {
-    text-align: center;
 
-    @include use.media-mobile-only {
-      max-width: 270px;
-    }
+.main-title__box {
+  text-align: center;
+
+  @include use.media-mobile-only {
+    max-width: 270px;
+  }
+}
+
+.main-title__slogan {
+  @include use.font-bold;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: use.$color-black;
+  margin: 0 0 35px -2px;
+
+  @include use.media-tablet {
+    @include use.font-large;
+    margin: 0 0 29px -2px;
   }
 
-  &__slogan {
-    @include use.font-bold;
-    line-height: 27px;
-    text-transform: uppercase;
-    color: use.$color-black;
-    margin: 0 0 35px -2px;
-
-    @include use.media-tablet {
-      @include use.font-large;
-      margin: 0 0 29px -2px;
-    }
-
-    @include use.media-desktop {
-      margin-left: -7px;
-    }
+  @include use.media-desktop {
+    margin-left: -7px;
   }
+}
 
-  &__reasons {
-    @include use.font-normal;
-    text-transform: uppercase;
-    margin: 0;
+.main-title__reasons {
+  @include use.font-normal;
+  text-transform: uppercase;
+  margin: 0;
 
-    @include use.media-desktop {
-      margin-left: -2px;
-    }
+  @include use.media-desktop {
+    margin-left: -2px;
   }
 }

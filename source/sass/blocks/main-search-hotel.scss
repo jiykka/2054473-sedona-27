@@ -1,4 +1,4 @@
-@use '../global/use.scss';
+@use "../global/use.scss";
 
 .main-search-hotel {
   background-color: use.$color-white;
@@ -6,87 +6,86 @@
   padding: 36px 18px 49px;
   text-align: center;
 
-  &__box {
-    max-width: 435px;
-    margin: 0 auto;
-    margin-bottom: 32px;
-
-    @include use.media-tablet {
-      margin-bottom: 41px;
-    }
-
-    @include use.media-desktop {
-      margin-bottom: 45px;
-    }
-  }
-
-  &__question {
-    @include use.font-large;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 21px;
-
-    @include use.media-tablet {
-      @include use.font-extralarge;
-      margin-bottom: 32px;
-    }
-
-    @include use.media-desktop {
-      margin-bottom: 33px;
-    }
-  }
-
-  &__text {
-    @include use.font-normal;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  &__button {
-    border: none;
-    background-color: use.$color-aqua;
-    @include use.font-large;
-    font-size: 19.6px;
-    color: use.$color-white;
-    text-transform: uppercase;
-    padding: 16px 49px;
-    cursor: pointer;
-    max-width: 442px;
-
-    @include use.media-tablet {
-      padding: 16px 135px;
-      max-width: 458px;
-    }
-
-    @include use.media-desktop {
-      padding: 17px 136px;
-    }
-
-    &:hover {
-      background-color: use.$color-aqua-dark;
-    }
-
-    &:focus-visible {
-      outline: 2px solid use.$color-black;
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: use.$color-aqua-darker;
-    }
-
-    &:disabled {
-      background-color: use.$color-disabled;
-      cursor: default;
-    }
-  }
-
   @include use.media-tablet {
     padding: 61px 0 58px;
   }
 
   @include use.media-desktop {
     padding: 61px 0 65px;
-    ;
+  }
+}
+
+.main-search-hotel__box {
+  max-width: 435px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  @include use.media-tablet {
+    margin-bottom: 41px;
+  }
+
+  @include use.media-desktop {
+    margin-bottom: 45px;
+  }
+}
+
+.main-search-hotel__question {
+  @include use.font-large;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 21px;
+
+  @include use.media-tablet {
+    @include use.font-extralarge;
+    margin-bottom: 32px;
+  }
+
+  @include use.media-desktop {
+    margin-bottom: 33px;
+  }
+}
+
+.main-search-hotel__text {
+  @include use.font-normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.main-search-hotel__button {
+  @include use.font-large;
+  border: none;
+  background-color: use.$color-aqua;
+  font-size: 19.6px;
+  color: use.$color-white;
+  text-transform: uppercase;
+  padding: 16px 49px;
+  cursor: pointer;
+  max-width: 442px;
+
+  @include use.media-tablet {
+    padding: 16px 135px;
+    max-width: 458px;
+  }
+
+  @include use.media-desktop {
+    padding: 17px 136px;
+  }
+
+  &:hover {
+    background-color: use.$color-aqua-dark;
+  }
+
+  &:focus-visible {
+    outline: 2px solid use.$color-black;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: use.$color-aqua-darker;
+  }
+
+  &:disabled {
+    background-color: use.$color-disabled;
+    cursor: default;
   }
 }

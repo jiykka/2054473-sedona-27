@@ -1,4 +1,4 @@
-@use '../global/use.scss';
+@use "../global/use.scss";
 
 .main-search-map {
   margin-bottom: 40px;
@@ -14,39 +14,39 @@
     max-width: 100%;
     object-fit: cover;
   }
+}
 
-  &__button {
-    position: absolute;
-    height: 27px;
-    width: 27px;
-    background-color: use.$color-aqua;
-    border: 5px solid use.$color-white;
-    border-radius: 50%;
-    top: 161px;
-    left: 45.5%;
-    cursor: pointer;
+.main-search-map__button {
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  background-color: use.$color-aqua;
+  border: 5px solid use.$color-white;
+  border-radius: 50%;
+  top: 161px;
+  left: 45.5%;
+  cursor: pointer;
 
-    @include use.media-tablet {
-      top: 164px;
-      left: 48%;
-    }
+  @include use.media-tablet {
+    top: 164px;
+    left: 48%;
+  }
 
-    @include use.media-desktop {
-      top: 162px;
-      left: 48.9%;
-    }
+  @include use.media-desktop {
+    top: 162px;
+    left: 48.9%;
+  }
 
-    &:hover {
-      background-color: use.$color-aqua-dark;
-    }
+  &:hover {
+    background-color: use.$color-aqua-dark;
+  }
 
-    &:focus-visible {
-      outline: 2px solid use.$color-black;
-    }
+  &:focus-visible {
+    outline: 2px solid use.$color-black;
+  }
 
-    &:active {
-      background-color: use.$color-aqua-darker;
-      box-shadow: 0 2px 5px rgba(1, 1, 1, 0.6);
-    }
+  &:active {
+    background-color: use.$color-aqua-darker;
+    box-shadow: 0 2px 5px rgba(1, 1, 1, 0.6);
   }
 }

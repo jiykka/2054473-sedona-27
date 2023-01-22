@@ -1,9 +1,9 @@
-@use '../global/use.scss';
+@use "../global/use.scss";
 
 .main-slider {
   position: relative;
   background-color: use.$color-aqua-dark;
-  background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom.svg'), url('../img/web-slider.webp');
+  background-image: url("../img/svg/slider-text.svg"), url("../img/svg/slider-bottom.svg"), url("../img/web-slider.webp");
   background-size: 282px, auto, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top 90px center, bottom -0.5px center, center;
@@ -21,12 +21,12 @@
   }
 
   @include use.media-desktop {
-    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/web-slider.webp');
+    background-image: url("../img/svg/slider-text.svg"), url("../img/svg/slider-bottom-desktop.svg"), url("../img/web-slider.webp");
     background-position: top 78px center, bottom 0 center, center;
     margin-bottom: 60px;
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../img/svg/slider-text.svg'), url('../img/svg/slider-bottom-desktop.svg'), url('../img/web-slider@2x.webp');
+    background-image: url("../img/svg/slider-text.svg"), url("../img/svg/slider-bottom-desktop.svg"), url("../img/web-slider@2x.webp");
   }
 }
